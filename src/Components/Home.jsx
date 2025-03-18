@@ -62,7 +62,7 @@ const Home = () => {
         {/* Booking Search Component */}
         <div className="mt-14 flex justify-center px-4">
           {/* Search Button */}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-lg text-lg h-14 w-full sm:w-60 md:w-52">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-lg text-lg h-14 w-full sm:w-60 md:w-52 cursor-pointer">
             <a
               href="https://book-directonline.com/properties/mirambeenamotel"
               target="_blank"
