@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react"; // Icons for mobile menu
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,21 +34,22 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-6 lg:space-x-10 text-sm uppercase">
-        <a href="/" className="hover:text-orange-400 transition">
+        import {Link} from "react-router-dom";
+        <Link to="/" className="hover:text-orange-400 transition">
           Home
-        </a>
-        <a href="/facility" className="hover:text-orange-400 transition">
+        </Link>
+        <Link to="/facility" className="hover:text-orange-400 transition">
           Facility
-        </a>
-        <a href="/gallery" className="hover:text-orange-400 transition">
+        </Link>
+        <Link to="/gallery" className="hover:text-orange-400 transition">
           Gallery
-        </a>
-        <a href="/careers" className="hover:text-orange-400 transition">
+        </Link>
+        <Link to="/careers" className="hover:text-orange-400 transition">
           Careers
-        </a>
-        <a href="/contactus" className="hover:text-orange-400 transition">
+        </Link>
+        <Link to="/contactus" className="hover:text-orange-400 transition">
           Contact Us
-        </a>
+        </Link>
       </div>
 
       {/* Call Us Button (Desktop) */}
@@ -76,36 +78,36 @@ const Navbar = () => {
             : "opacity-0 invisible -translate-y-5"
         }`}
       >
-        <a
-          href="/"
+        <Link
+          to="/"
           className="block py-3 text-center hover:text-orange-400 transition"
         >
           Home
-        </a>
-        <a
-          href="/facility"
+        </Link>
+        <Link
+          to="/facility"
           className="block py-3 text-center hover:text-orange-400 transition"
         >
           Facility
-        </a>
-        <a
-          href="/gallery"
+        </Link>
+        <Link
+          to="/gallery"
           className="block py-3 text-center hover:text-orange-400 transition"
         >
           Gallery
-        </a>
-        <a
-          href="/careers"
+        </Link>
+        <Link
+          to="/careers"
           className="block py-3 text-center hover:text-orange-400 transition"
         >
           Careers
-        </a>
-        <a
-          href="/contactus"
+        </Link>
+        <Link
+          to="/contactus"
           className="block py-3 text-center hover:text-orange-400 transition"
         >
           Contact Us
-        </a>
+        </Link>
         <button className="w-full bg-orange-500 py-2 mt-3 rounded-full text-white hover:bg-orange-600 transition">
           Call Us
         </button>

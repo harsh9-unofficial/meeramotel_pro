@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,23 +26,23 @@ const Footer = () => {
         {/* Right Section: Navigation & Social Icons */}
         <div className="flex flex-col items-center space-y-8">
           {/* Navigation Bar */}
-          <nav className="flex space-x-4 md:space-x-6 text-sm font-medium">
-            <a href="/" className="hover:underline">
+          <div className="flex space-x-4 md:space-x-6 text-sm font-medium">
+            <Link to="/" className="hover:underline">
               Home
-            </a>
-            <a href="/facility" className="hover:underline">
+            </Link>
+            <Link to="/facility" className="hover:underline">
               Facility
-            </a>
-            <a href="/gallery" className="hover:underline">
+            </Link>
+            <Link to="/gallery" className="hover:underline">
               Gallery
-            </a>
-            <a href="/careers" className="hover:underline">
+            </Link>
+            <Link to="/careers" className="hover:underline">
               Careers
-            </a>
-            <a href="/contactus" className="hover:underline">
+            </Link>
+            <Link to="/contactus" className="hover:underline">
               Contact Us
-            </a>
-          </nav>
+            </Link>
+          </div>
 
           {/* Social Media Icons */}
           <div className="flex space-x-6">
