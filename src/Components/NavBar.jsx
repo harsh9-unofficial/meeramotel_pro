@@ -34,7 +34,6 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-6 lg:space-x-10 text-sm uppercase">
-        import {Link} from "react-router-dom";
         <Link to="/" className="hover:text-orange-400 transition">
           Home
         </Link>
