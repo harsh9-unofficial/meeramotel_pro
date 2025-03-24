@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Dining() {
+  const images = ["d1.jpg", "d2.jpg", "d3.jpg"]; // Multiple images
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 3000); // Auto-scroll every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Function to open the PDF directly
+  const openPDF = () => {
+    window.location.href = "/menu.pdf"; // Opens PDF directly
+  };
+
   return (
     <div className="bg-white text-gray-800">
       <div className="flex flex-col lg:flex-row">
         <div className="lg:w-1/2">
           <img
-            src="dining.svg"
+            src={images[currentImage]}
             alt="dining"
-            className="w-full h-screen object-cover"
+            className="w-full h-[60vh] md:h-screen object-cover transition-opacity duration-1000"
           />
         </div>
         <div className="lg:w-1/2 p-6 md:p-12 flex flex-col justify-center">
@@ -43,6 +59,16 @@ function Dining() {
               <span>Tuesday to Saturday</span>
             </div>
             <hr className="border-[#DADADA]" />
+          </div>
+
+          {/* Menu Button (Right-Aligned) */}
+          <div className="mt-6 flex justify-end">
+            <button
+              onClick={openPDF}
+              className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition"
+            >
+              Menu
+            </button>
           </div>
         </div>
       </div>

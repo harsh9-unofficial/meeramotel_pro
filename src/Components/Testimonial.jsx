@@ -47,6 +47,7 @@ const Testimonial = () => {
   ];
 
   const scrollRef = useRef(null);
+  const intervalRef = useRef(null);
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -54,7 +55,7 @@ const Testimonial = () => {
 
     const scroll = () => {
       if (scrollContainer) {
-        scrollAmount += 1;
+        scrollAmount += 2; // Increased speed
         scrollContainer.scrollLeft = scrollAmount;
 
         if (scrollAmount >= scrollContainer.scrollWidth / 2) {
@@ -64,8 +65,24 @@ const Testimonial = () => {
       }
     };
 
-    const interval = setInterval(scroll, 50);
-    return () => clearInterval(interval);
+    const startScrolling = () => {
+      intervalRef.current = setInterval(scroll, 30); // Smoother scrolling
+    };
+
+    const stopScrolling = () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+
+    scrollContainer.addEventListener("mouseenter", stopScrolling);
+    scrollContainer.addEventListener("mouseleave", startScrolling);
+
+    startScrolling();
+
+    return () => {
+      stopScrolling();
+      scrollContainer.removeEventListener("mouseenter", stopScrolling);
+      scrollContainer.removeEventListener("mouseleave", startScrolling);
+    };
   }, []);
 
   return (
@@ -94,7 +111,7 @@ const Testimonial = () => {
 
       <div
         ref={scrollRef}
-        className=" h-[500px] flex space-x-6 overflow-hidden "
+        className="h-[500px] flex space-x-6 overflow-hidden whitespace-nowrap"
       >
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div

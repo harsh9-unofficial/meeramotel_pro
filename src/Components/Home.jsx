@@ -32,7 +32,7 @@ const Home = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('homescreen.svg')", // Change to your actual image path
+          backgroundImage: "url('h.jpg')", // Change to your actual image path
         }}
       >
         {/* Dark Overlay */}
@@ -61,19 +61,20 @@ const Home = () => {
 
         {/* Booking Search Component */}
         <div className="mt-14 flex justify-center px-4">
+          {/* <div className="bg-[#F1EFE1] p-2 rounded-lg flex flex-wrap gap-2 w-full max-w-4xl justify-center"> */}
           {/* Search Button */}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-lg text-lg h-14 w-full sm:w-60 md:w-52 cursor-pointer">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-lg text-lg h-14 w-full sm:w-60 md:w-52">
             <a
               href="https://book-directonline.com/properties/mirambeenamotel"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Search
+              Book Now
             </a>
           </button>
+          {/* </div> */}
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };

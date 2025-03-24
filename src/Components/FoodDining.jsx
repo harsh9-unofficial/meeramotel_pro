@@ -7,9 +7,9 @@ const FoodDining = () => {
         {/* Left Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="fooddining.svg"
+            src="f3.jpg"
             alt="Food & Dining"
-            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-br-[100px] object-cover rounded-l-none pr-6"
+            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-l-none rounded-r-full pr-6"
           />
         </div>
 

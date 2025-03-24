@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex space-x-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/18YoS1CdYP/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300"
@@ -54,20 +54,10 @@ const Footer = () => {
               <FaFacebookF size={20} />
             </a>
             <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:Bookings@mirambeenamotel.com.au"
               className="hover:text-gray-300"
             >
-              <FaInstagram size={20} />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-300"
-            >
-              <FaLinkedinIn size={20} />
+              <FaEnvelope size={20} />
             </a>
           </div>
         </div>

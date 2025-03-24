@@ -6,10 +6,11 @@ const FacilityHome = () => {
       {/* Hero Section */}
       <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] flex items-center justify-center text-center text-white">
         <img
-          src="facilityhome.svg"
+          src="f.jpg"
           alt="Facility Banner"
-          className="absolute inset-0 w-full h-full object-cover brightness-75"
+          className="absolute inset-0 w-full h-full object-cover brightness-75 "
         />
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10">
           <p className="text-sm md:text-base">Home / Facility</p>
           <h1 className="text-3xl md:text-5xl font-bold mt-2">FACILITY</h1>

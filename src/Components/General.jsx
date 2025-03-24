@@ -26,9 +26,9 @@ const Entertainment = () => {
         {/* Right Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
-            src="entertainment.svg"
+            src="g.jpg"
             alt="Entertainment Area"
-            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-bl-[100px] object-cover rouned-l-none ml-10 overflow-hidden"
+            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-l-full rounded-r-none pl-6"
           />
         </div>
       </div>

@@ -5,7 +5,7 @@ const Soul = () => {
     <div className="bg-cream  lg:pl-12 lg:pt-12">
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
         {/* Left Section */}
-        <div className="lg:w-1/2 px-6 ">
+        <div className="lg:w-1/2 px-6 md:mt-25">
           <h2
             className="text-[#000000] uppercase mb-2"
             style={{ fontFamily: "inter" }}
@@ -75,10 +75,8 @@ const Soul = () => {
           <div className="px-12">
             <img
               alt="Outdoor seating area with tables and chairs under a covered patio, with a view of greenery and a ping pong table in the foreground"
-              className="max-w-lg w-full h-auto object-cover rounded-tl-[300px] rounded-tr-[300px]"
-              height="400"
-              src="soul.svg"
-              width="600"
+              className="max-w-lg w-full md:h-[600px] h-[400px] object-cover rounded-tl-[300px] rounded-tr-[300px]"
+              src="s1.jpg"
             />
           </div>
         </div>

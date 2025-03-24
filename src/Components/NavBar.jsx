@@ -25,7 +25,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full fixed top-0 left-0 right-0 z-50 bg-[#00000080] backdrop-blur-md text-white px-6 md:px-12 lg:px-20 py-4 flex items-center justify-between">
+    <nav className="w-full fixed top-0 left-0 right-0 z-50 bg-[#ffffff] backdrop-blur-md text-[#FF7F3E] px-6 md:px-12 lg:px-20 py-4 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
         <img src="logo.svg" alt="Mirambeena Motel" className="h-10 w-auto" />
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`menu-container absolute top-16 left-0 w-full bg-black text-white p-6 shadow-lg transition-all duration-300 ease-in-out md:hidden ${
+        className={`menu-container absolute top-16 left-0 w-full bg-[#ffffff] text-[#FF7F3E] p-6 shadow-lg transition-all duration-300 ease-in-out md:hidden ${
           isOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-5"

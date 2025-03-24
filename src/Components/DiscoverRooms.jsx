@@ -7,15 +7,15 @@ const DiscoverRooms = () => {
   const rooms = [
     {
       name: "Units",
-      image: "room.svg",
+      image: "r1.jpg",
     },
     {
       name: "Ensuite",
       image: "room2.svg",
     },
     {
-      name: "Restroom",
-      image: "room3.svg",
+      name: "Shared Room",
+      image: "r3.jpg",
     },
   ];
 
@@ -63,9 +63,9 @@ const DiscoverRooms = () => {
       <div className="flex flex-col lg:flex-row items-center">
         <div className="relative lg:w-1/2">
           <img
-            src={imageSrc} // ✅ Use dynamic state for image source
+            src={imageSrc}
             alt="Selected Room"
-            className="rounded-lg rounded-l-none w-full"
+            className="rounded-l-none rounded-r-full w-full md:h-[400px] h-[300px] object-cover"
           />
 
           <div className="sm:absolute bottom-4 left-4 flex items-center gap-1 bg-white rounded-full px-1 text-xs sm:text-sm sm:gap-1 overflow-hidden max-w-fit py-1 my-2">

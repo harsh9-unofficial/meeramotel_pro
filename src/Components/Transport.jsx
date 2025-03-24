@@ -7,9 +7,9 @@ const FoodDining = () => {
         {/* Left Image Section */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <img
-            src="fooddining.svg"
-            alt="Food & Dining"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto object-cover rounded-br-[80px] md:rounded-br-[100px] pr-6"
+            src="cab.jpg"
+            alt="cab"
+            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto rounded-l-none rounded-r-full pr-6"
           />
         </div>
 
@@ -19,10 +19,10 @@ const FoodDining = () => {
             <span className="text-orange-500 font-kalam">Transport</span>
           </h2>
           <ul className="mt-4 text-[#888888] space-y-2 text-sm sm:text-base">
-            <li>✔ Free airport pick-up and drop-off</li>
-            <li>✔ Courtesy shuttle bus</li>
-            <li>✔ Parking for trucks, trailers, and commercial vehicles</li>
-            <li>✔ Car washing facilities (off-site)</li>
+            <li>- Free airport pick-up and drop-off</li>
+            <li>- Courtesy shuttle bus</li>
+            <li>- Parking for trucks, trailers, and commercial vehicles</li>
+            <li>- Car washing facilities (off-site)</li>
           </ul>
         </div>
       </div>
